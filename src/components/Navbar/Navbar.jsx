@@ -1,22 +1,47 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { Link as RouterLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
 
   const navItems = ["Skills", "Certificates", "Projects", "FAQ", "Contact"];
+
+  const NavLink = ({ item }) => {
+    if (isHomePage) {
+      return (
+        <ScrollLink
+          to={item.toLowerCase()}
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          className="cursor-pointer"
+          onClick={() => setIsOpen(false)}>
+          {item}
+        </ScrollLink>
+      );
+    } else {
+      return (
+        <RouterLink
+          to={`/#${item.toLowerCase()}`}
+          onClick={() => setIsOpen(false)}>
+          {item}
+        </RouterLink>
+      );
+    }
+  };
 
   return (
     <nav className="bg-gradient-to-r from-gray-900 to-gray-800 shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <motion.a
-            href="/hireligia"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}>
-            Hire Ligia
-          </motion.a>
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <RouterLink to="/">Hire Ligia</RouterLink>
+          </motion.div>
           <div className="hidden md:flex space-x-8">
             {navItems.map((item, index) => (
               <motion.div
@@ -26,15 +51,7 @@ const Navbar = () => {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: index * 0.1 }}>
-                <Link
-                  to={item.toLowerCase()}
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                  className="cursor-pointer">
-                  {item}
-                </Link>
+                <NavLink item={item} />
               </motion.div>
             ))}
           </div>
@@ -75,16 +92,7 @@ const Navbar = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.3, delay: index * 0.1 }}
                 className="block py-3 px-4 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition duration-300">
-                <Link
-                  to={item.toLowerCase()}
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                  onClick={() => setIsOpen(false)}
-                  className="cursor-pointer">
-                  {item}
-                </Link>
+                <NavLink item={item} />
               </motion.div>
             ))}
           </motion.div>
