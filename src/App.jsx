@@ -17,7 +17,7 @@ function App() {
   const location = useLocation();
 
   useEffect(() => {
-    if (location.hash && location.pathname === "/") {
+    if (location.hash) {
       const element = document.querySelector(location.hash);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
