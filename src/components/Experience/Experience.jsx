@@ -12,11 +12,11 @@ import {
 const experiences = [
   {
     icon: faLaptopCode,
-    title: "Freelance Web Developer",
-    company: "Self-Employed",
-    period: "Aug 2023 - Present",
+    title: "Junior Backend Developer",
+    company: "55PBX Cloud PBX",
+    period: "Oct 2024 - Present",
     description:
-      "Providing web development services to clients globally, specializing in React and TypeScript. Responsible for design, development, and deployment of custom websites and applications.",
+      "Currently working as part of a team to maintain and refactor a Cloud PBX system using Node.js, React, Angular, MySQL, and MongoDB. Collaborates in an Agile environment with Scrum practices, using Jira for task management and Bitbucket for version control. Tests APIs with Postman, manages CI/CD pipelines, writes technical documentation, troubleshoots and resolves bugs, and develops new features to enhance system functionality and user experience.",
     color: "#61DAFB",
   },
   {
