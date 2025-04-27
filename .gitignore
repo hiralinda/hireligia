@@ -22,13 +22,3 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# rubiks model
-/public/suzanne
-
-# images
-/src/img
-
-#files 
-
-/public/ligiahirata_cv.pdf
-/public/transcript.pdf
