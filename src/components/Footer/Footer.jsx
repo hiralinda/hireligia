@@ -34,38 +34,6 @@ const Footer = () => {
               </span>
             </motion.a>
           </div>
-          <div className="mb-4 md:mb-0">
-            <motion.a
-              href="https://hiralinda.github.io/hireligia-brutalist-version/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-300 hover:text-white transition duration-300"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}>
-              <span className="flex items-center">
-                Hire Ligia Brutalist Version
-              </span>
-            </motion.a>
-          </div>
-          <div className="mb-4 md:mb-0">
-            <motion.a
-              href="https://hiralinda.github.io/hireligia-2000s-version/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-300 hover:text-white transition duration-300"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}>
-              <span className="flex items-center">
-                Hire Ligia 2000s Version
-              </span>
-            </motion.a>
-          </div>
           <motion.div
             className="flex space-x-6"
             initial={{ opacity: 0, y: 20 }}
