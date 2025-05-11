@@ -39,10 +39,6 @@ const faqs = [
       </>
     ),
   },
-  {
-    question: "What is your favorite AI model?",
-    answer: "It was always ChatGPT until I heard about Claude.",
-  },
 ];
 
 const FAQ = () => {
