@@ -4,8 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faReact,
   faNodeJs,
-  faHtml5,
-  faCss3Alt,
   faJsSquare,
   faPython,
   faGitAlt,
@@ -14,28 +12,38 @@ import {
 import {
   SiDjango,
   SiFlask,
-  SiBootstrap,
-  SiTailwindcss,
-  SiBlender,
-  SiSass,
+  SiExpress,
+  SiAngular,
+  SiMysql,
+  SiMongodb,
+  SiJira,
+  SiPostman,
+  SiDocker,
+  SiVisualstudiocode,
+  SiVercel,
 } from "react-icons/si";
+import { FaBitbucket } from "react-icons/fa";
 
 const Skills = () => {
   const skills = [
-    { icon: faHtml5, name: "HTML5", color: "#E34F26" },
-    { icon: faCss3Alt, name: "CSS3", color: "#1572B6" },
-    { icon: SiSass, name: "SASS", color: "#CC6699" },
     { icon: faJsSquare, name: "JavaScript", color: "#F7DF1E" },
     { icon: faReact, name: "React", color: "#61DAFB" },
-    { icon: SiBootstrap, name: "Bootstrap", color: "#7952B3" },
-    { icon: SiTailwindcss, name: "Tailwind CSS", color: "#38B2AC" },
+    { icon: SiAngular, name: "Angular", color: "#DD0031" },
     { icon: faNodeJs, name: "Node.js", color: "#339933" },
+    { icon: SiExpress, name: "Express", color: "#ffffff" },
     { icon: faPython, name: "Python", color: "#3776AB" },
-    { icon: SiDjango, name: "Django", color: "#339933" },
-    { icon: SiFlask, name: "Flask", color: "#ffffff" },
+    { icon: SiDjango, name: "Django", color: "#FF6C37" },
+    { icon: SiFlask, name: "Flask", color: "#000000" },
+    { icon: SiMysql, name: "MySQL", color: "#4479A1" },
+    { icon: SiMongodb, name: "MongoDB", color: "#47A248" },
     { icon: faGitAlt, name: "Git", color: "#F05032" },
     { icon: faGithub, name: "GitHub", color: "#ffffff" },
-    { icon: SiBlender, name: "Blender", color: "#F5792A" },
+    { icon: FaBitbucket, name: "Bitbucket", color: "#205081" },
+    { icon: SiJira, name: "Jira", color: "#0052CC" },
+    { icon: SiPostman, name: "Postman", color: "#FF6C37" },
+    { icon: SiDocker, name: "Docker", color: "#2496ED" },
+    { icon: SiVisualstudiocode, name: "VS Code", color: "#007ACC" },
+    { icon: SiVercel, name: "Vercel", color: "#000000" },
   ];
 
   const tumblingVariants = {
