@@ -19,6 +19,15 @@ const experiences = [
       "Currently working as part of a team to maintain and refactor a Cloud PBX system using Node.js, React, Angular, MySQL, and MongoDB. Collaborating in an Agile environment with Scrum practices, using Jira for task management and Bitbucket for version control. Testing APIs with Postman, managing CI/CD pipelines, writing technical documentation, troubleshooting and resolving bugs, and developing new features to enhance system functionality and user experience.",
     color: "#61DAFB",
   },
+   {
+    icon: faLaptopCode,
+    title: "Freelance Web Developer",
+    company: "Self-Employed",
+    period: "Aug 2024 - Present",
+    description:
+      "Developing, designing, and deploying websites for clients, creating an intuitive and visually appealing user interface to client specifications; Managing deployment and providing ongoing support to maintain the site’s responsiveness and efficiency.",
+    color: "#61DAFB",
+  },
   {
     icon: faBriefcase,
     title: "Junior Software Developer",
