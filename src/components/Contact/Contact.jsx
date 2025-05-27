@@ -1,9 +1,7 @@
-import React from "react";
 import { motion } from "framer-motion";
 import {
   faLinkedin,
   faGithub,
-  faFreeCodeCamp,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -20,18 +18,18 @@ const socialLinks = [
     icon: faGithub,
     isCustomIcon: false,
   },
-  {
-    platform: "Frontend Mentor",
-    url: "https://www.frontendmentor.io/profile/hiralinda",
-    icon: "https://seeklogo.com/images/F/frontend-mentor-logo-DD85EFE0E9-seeklogo.com.png",
-    isCustomIcon: true,
-  },
-  {
-    platform: "FreeCodeCamp",
-    url: "https://www.freecodecamp.org/hiralinda",
-    icon: faFreeCodeCamp,
-    isCustomIcon: false,
-  },
+  // {
+  //   platform: "Frontend Mentor",
+  //   url: "https://www.frontendmentor.io/profile/hiralinda",
+  //   icon: "https://seeklogo.com/images/F/frontend-mentor-logo-DD85EFE0E9-seeklogo.com.png",
+  //   isCustomIcon: true,
+  // },
+  // {
+  //   platform: "FreeCodeCamp",
+  //   url: "https://www.freecodecamp.org/hiralinda",
+  //   icon: faFreeCodeCamp,
+  //   isCustomIcon: false,
+  // },
   // {
   //   platform: "The Project Odin",
   //   url: "https://www.theodinproject.com/dashboard",
