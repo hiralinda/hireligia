@@ -11,16 +11,13 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import {
   SiDjango,
-  SiFlask,
   SiExpress,
   SiAngular,
   SiMysql,
   SiMongodb,
   SiJira,
   SiPostman,
-  SiDocker,
-  SiVisualstudiocode,
-  SiVercel,
+  SiStorybook,
 } from "react-icons/si";
 import { FaBitbucket } from "react-icons/fa";
 
@@ -28,12 +25,12 @@ const Skills = () => {
   const skills = [
     { icon: faJsSquare, name: "JavaScript", color: "#F7DF1E" },
     { icon: faReact, name: "React", color: "#61DAFB" },
+    { icon: SiStorybook, name: "Storybook", color: "#ff4885"},
     { icon: SiAngular, name: "Angular", color: "#DD0031" },
     { icon: faNodeJs, name: "Node.js", color: "#339933" },
     { icon: SiExpress, name: "Express", color: "#ffffff" },
     { icon: faPython, name: "Python", color: "#3776AB" },
     { icon: SiDjango, name: "Django", color: "#FF6C37" },
-    { icon: SiFlask, name: "Flask", color: "#000000" },
     { icon: SiMysql, name: "MySQL", color: "#4479A1" },
     { icon: SiMongodb, name: "MongoDB", color: "#47A248" },
     { icon: faGitAlt, name: "Git", color: "#F05032" },
@@ -41,9 +38,6 @@ const Skills = () => {
     { icon: FaBitbucket, name: "Bitbucket", color: "#205081" },
     { icon: SiJira, name: "Jira", color: "#0052CC" },
     { icon: SiPostman, name: "Postman", color: "#FF6C37" },
-    { icon: SiDocker, name: "Docker", color: "#2496ED" },
-    { icon: SiVisualstudiocode, name: "VS Code", color: "#007ACC" },
-    { icon: SiVercel, name: "Vercel", color: "#000000" },
   ];
 
   const tumblingVariants = {
