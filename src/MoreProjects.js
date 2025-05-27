@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+
+import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 import img0 from "./img/img0.png";
@@ -26,29 +28,34 @@ const moreProjects = [
     tags: ["React", "TailwindCSS", "Three.js", "Blender"],
   },
   {
-    title: "Teacher-Student Django Platform",
+    title: "NGO Landing Page",
     description:
-      "A web application designed to facilitate the interaction between teachers and students.",
-    sourceCode:
-      "https://github.com/hiralinda/djangoproject_schoolwebpage?tab=readme-ov-file#teacher-student-django-platform",
-    liveSite: "https://youtu.be/Qk2ap_J89tg",
-    course: "CS50's Web Programming with Python and JavaScript",
+      "Multilingual website for a global educational NGO, built to showcase programs, testimonials, and ways to get involved.",
+    sourceCode: "Private Repository",
+    liveSite: "https://xoxoeducation.com/",
+    course: "Volunteering",
     comments:
-      "To challenge myself, I implemented the Goggle Calendar API to generate Google Meets Links according to the scheduled class information on the platform.",
+      "Led front-end development and content structuring, implemented i18n support for English and Portuguese, and optimized user experience across pages like 'Who We Are', 'Testimonials', 'Contribute', and 'Impact'.",
     image: img8,
-    tags: ["GoogleAPI", "Django", "TailwindCSS", "SQLite3", "SASS"],
+    tags: ["React", "Internationalization", "Multilingual", "ResponsiveDesign"],
   },
   {
-    title: "Eras Tour Acoustic Set",
+    title: "Ballet Studio Website",
     description:
-      "An application that displays every song Taylor Swift has performed during the Acoustic Set on The Eras Tour as a sortable table.",
-    sourceCode: "https://github.com/hiralinda/eras-tour-acoustic-set",
-    liveSite: "https://eras-tour-acoustic-set.vercel.app/",
-    course: "Personal Project",
+      "Elegant, responsive website for a ballet studio, designed with a soft pink and white theme. Includes an autoplaying homepage carousel, a filterable class schedule, and multimedia galleries with lightbox functionality.",
+    sourceCode: "Private Repository",
+    liveSite: "https://www.giselealbanodancas.com.br/",
+    course: "Freelance",
     comments:
-      "I created this project after losing track of all the surprise songs that has been performed on the Acoustic Set on Eras Tour.",
+      "Handled full development and deployment. Implemented Material-UI for styling, dynamic schedule filters, and lightbox media viewing for a clean user experience.",
     image: img6,
-    tags: ["Next.js", "TailwindCSS", "TypeScript", "Vercel"],
+    tags: [
+      "React",
+      "Material-UI",
+      "ResponsiveDesign",
+      "Lightbox",
+      "FilterableSchedule",
+    ],
   },
   {
     title: "Retro Rock Paper Scissors Lizard Spock",
@@ -163,13 +170,17 @@ const MoreProjects = () => {
               />
               <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
               <p className="text-lg mb-4">{project.description}</p>
-              <a
-                href={project.sourceCode}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-400 hover:underline">
-                Source Code
-              </a>
+              {project.sourceCode === "Private Repository" ? (
+                              <span className="text-gray-400">Private Repository</span>
+                            ) : (
+                              <Link
+                                to={project.sourceCode}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-400 hover:underline">
+                                Source Code
+                              </Link>
+                            )}
               <br />
               <a
                 href={project.liveSite}
@@ -181,7 +192,7 @@ const MoreProjects = () => {
                   : "Live Website"}
               </a>
               <p className="text-sm text-gray-400 mt-2">
-                {project.course !== "Personal Project" && "Course: "}
+                {/* {project.course !== "Personal Project" && "Course: "} */}
                 {project.course}
               </p>
 
