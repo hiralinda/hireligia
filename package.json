@@ -1,7 +1,6 @@
 {
   "name": "hireligia",
   "version": "0.1.0",
-  "homepage": "https://hiralinda.github.io/hireligia",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
