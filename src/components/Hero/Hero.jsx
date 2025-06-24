@@ -1,6 +1,5 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { motion } from "framer-motion";
-import ThreeDModel from "../Three/Three";
 import "./Hero.css";
 import {
   FaGithub,
@@ -8,6 +7,8 @@ import {
   FaEnvelope,
   FaFileDownload,
 } from "react-icons/fa";
+
+const ThreeDModel = lazy(() => import("../Three/Three"));
 
 const Hero = () => {
   return (
@@ -101,10 +102,16 @@ const Hero = () => {
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}
             className="hidden md:block md:w-1/2 absolute right-0 top-0 bottom-0">
-            <div className="w-full h-full">
-              <ThreeDModel />
+            <div className="w-full h-full flex items-center justify-center">
+              <Suspense
+                fallback={
+                  <div className="w-72 h-72 bg-gradient-to-br from-blue-400 to-purple-500 rounded-xl animate-pulse shadow-lg rotate-[45deg]" />
+                }>
+                <ThreeDModel />
+              </Suspense>
             </div>
           </motion.div>
+
         </motion.div>
       </div>
     </div>
