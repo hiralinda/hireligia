@@ -39,7 +39,7 @@ const Hero = () => {
               className="text-4xl md:text-5xl font-bold leading-tight mb-6">
               Hi, I'm{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
-                Ligia Hirata
+                Ligia
               </span>
             </motion.h1>
             <motion.p
@@ -47,7 +47,7 @@ const Hero = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.5 }}
               className="text-lg md:text-xl mb-6">
-              Junior Software Developer with 1+ year of experience, based in
+              Fullstack Software Developer with hands-on experience, based in
               Brazil, and looking for a remote position.
             </motion.p>
             <motion.div
