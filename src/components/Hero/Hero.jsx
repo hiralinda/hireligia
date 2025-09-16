@@ -47,7 +47,7 @@ const Hero = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.5 }}
               className="text-lg md:text-xl mb-6">
-              Fullstack Software Developer with hands-on experience, based in
+              Software Developer with hands-on experience, based in
               Brazil, and looking for a remote position.
             </motion.p>
             <motion.div

@@ -12,7 +12,7 @@ import {
 const experiences = [
   {
     icon: faLaptopCode,
-    title: "Fullstack Developer",
+    title: "Software Developer",
     company: "55PBX Cloud PBX",
     period: "Oct 2024 - Present",
     description:
