@@ -3,7 +3,7 @@
 This Personal Portfolio project is an interactive web application showcasing my skills, projects, and contact information. It demonstrates advanced React, CSS, and JavaScript skills, providing a user-friendly interface for recruiters and potential collaborators to learn more about me and my work. The portfolio also features a 3D object implementation using Blender and Three.js, adding a unique and engaging visual element.
 
 ## Live Demo
-[View Live Demo]([https://hiralinda.cv/])
+[View Live Demo](https://hiralinda.cv/)
 
 ## Features
 - Home section with a brief introduction and a call-to-action
