@@ -5,7 +5,6 @@ import {
   FaGithub,
   FaLinkedin,
   FaEnvelope,
-  FaFileDownload,
 } from "react-icons/fa";
 
 const ThreeDModel = lazy(() => import("../Three/Three"));
