@@ -81,7 +81,7 @@ const Hero = () => {
                 <FaEnvelope />
               </motion.a>
             </motion.div>
-            <motion.div
+            {/* <motion.div
               initial={{ y: -20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.5 }}
@@ -95,7 +95,7 @@ const Hero = () => {
                 <FaFileDownload className="mr-2" />
                 View CV
               </motion.a>
-            </motion.div>
+            </motion.div> */}
           </div>
           <motion.div
             initial={{ x: 100, opacity: 0 }}
